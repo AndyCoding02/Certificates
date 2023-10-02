@@ -1,0 +1,29 @@
+#lbOuter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+#lbOuter.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+#lbInner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#lbInner img {
+    width: 100%;
+    height: auto;
+    max-height: 1200px;
+}
